@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dynamic Navigation and Content</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Dynamically generated navigation items -->
+<!--                <li th:each="menuItem : ${menuItems}">
+                    <a th:href="${menuItem.url}" th:text="${menuItem.label}"></a>
+                </li>-->
+                 <li th:each="item : ${navigation}">
+                    <a th:href="@{${item.url}}"><span th:text="${item.title}"></span></a>
+                 </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dynamic content loaded based on navigation selection -->
+<!--        <div th:replace="${content}"></div>-->
+    </main>
+</body>
+</html>
+

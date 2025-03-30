@@ -1,0 +1,52 @@
+{
+	"plannedExpenses": 240000,
+	"expenses": 18000,
+	"expensesCritical": 250000,
+	"budget": 240000,
+	"resourceCosts": 0,
+	"storageCosts": 0,
+	"productionCosts": 0,
+	"marketingCosts": 0,
+	"expectedProductionTime": 8,
+	"currentProductionTime": 6,
+	"timeMeasure": "h",
+	"productionTimeComparisonCriticality": "Good",
+	"shareOwnProduction": 70,
+	"year": 2022,
+	"temperatureUnit": "°C",
+	"currency": "KES",
+	"fillLevel": {
+		"threshold": 20,
+		"measure": "ltrs",
+		"valueBegin": "30",
+		"valueEnd": "5",
+		"timeBegin": "Aug",
+		"timeEnd": "Nov",
+		"color": {
+			"above": "Good",
+			"below": "Error"
+		},
+		"timeSeries": [
+			{
+				"time": 0,
+				"level": 30
+			},
+			{
+				"time": 1,
+				"level": 49
+			},
+			{
+				"time": 2,
+				"level": 28
+			},
+			{
+				"time": 2.5,
+				"level": 11
+			},
+			{
+				"time": 3,
+				"level": 5
+			}
+		]
+	}
+}

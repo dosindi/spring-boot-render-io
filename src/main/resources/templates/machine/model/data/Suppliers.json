@@ -1,0 +1,20 @@
+{
+	"timeMeasure": "h",
+	"Suppliers": [
+		{
+			"id": "Super Supplier 3000",
+			"deliveryTime": 12,
+			"deliveryTimeSemantics": "Good"
+		},
+		{
+			"id": "Ice Adult - Ice Cream Trucks",
+			"deliveryTime": 8,
+			"deliveryTimeSemantics": "Critical"
+		},
+		{
+			"id": "Frozen Rock",
+			"deliveryTime": 3,
+			"deliveryTimeSemantics": "Good"
+		}
+	]
+}
