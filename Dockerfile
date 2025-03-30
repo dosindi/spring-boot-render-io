@@ -8,4 +8,4 @@ RUN ./mvnw dependency:go-offline
  
 COPY src ./src
  
-CMD ["./mvnw", "clean package -Pproduction"]
+CMD ["./mvnw", "spring-boot:run -Pproduction"]
