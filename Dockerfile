@@ -1,7 +1,7 @@
-FROM eclipse-temurin:17-jdk-focal AS builder
+# ---- FROM eclipse-temurin:17-jdk-focal AS builder ----
  
 # ---- Stage 1: Build the application ----
-# ---- FROM maven:3.9.6-eclipse-temurin-17 AS builder ----
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
 
 # Set the working directory
 WORKDIR /app
