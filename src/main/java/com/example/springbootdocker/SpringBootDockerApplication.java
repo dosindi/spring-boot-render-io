@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringBootDockerApplication {
 
-    private static final Logger log = LoggerFactory.getLogger(CrudWithVaadinApplication.class);
+    private static final Logger log = LoggerFactory.getLogger(SpringBootDockerApplication.class);
 
 
 	public static void main(String[] args) {
