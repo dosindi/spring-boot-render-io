@@ -1,0 +1,70 @@
+<mvc:View
+    controllerName="com.penninkhof.espui.controller.NetworkGraph"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <Page
+        title="{status>/config/friendlyName} {i18n>diagTitle}"
+        showNavButton="true"
+        navButtonPress="onNavBack">
+        <headerContent>
+            <Text text="{status>/diagnostics/localTime}" class="sapUiTinyMarginEnd" />
+            <core:Icon id="connectedIcon" src="sap-icon://disconnected" class="sapUiTinyMarginEnd" />
+        </headerContent>
+        <content>
+            <Graph  enableWheelZoom="false"
+                    id="graph"
+                    height="100%"
+                    width="100%"
+                    nodes="{/nodes}"
+                    lines="{/lines}"
+                    groups="{/groups}">
+                <statuses>
+                    <Status key="CustomStatus" backgroundColor="darkblue" />
+                </statuses>
+                <nodes>
+                    <Node
+                        key="{key}"
+                        title="{title}"
+                        group="{group}"
+                        icon="{icon}"
+                        attributes="{path:'attributes', templateShareable:true}"
+                        showActionLinksButton="false"
+                        status="{status}"
+                        shape="Box">
+                        <attributes>
+                            <ElementAttribute
+                                label="{label}"
+                                value="{value}"/>
+                        </attributes>
+                    </Node>
+                </nodes>
+                <lines>
+                    <Line
+                        from="{from}"
+                        to="{to}"
+                        attributes="{path:'attributes', templateShareable:true}"
+                        status="{status}">
+                        <attributes>
+                            <ElementAttribute
+                                label="{label}"
+                                value="{value}"/>
+                        </attributes>
+                    </Line>
+                </lines>
+                <groups>
+                    <Group
+                        headerCheckBoxState="{headerCheckboxState}"
+                        status="{status}"
+                        icon="sap-icon://measure"
+                        collapsed="{collapsed}"
+                        key="{key}"
+                        title="{title}">
+                    </Group>
+                </groups>
+            </Graph>
+        </content>
+    </Page>
+</mvc:View>

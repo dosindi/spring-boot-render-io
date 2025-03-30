@@ -1,0 +1,30 @@
+<mvc:View
+  controllerName="myApp.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <App>
+    <Page title="Entities">
+      <content>
+        <Table id="entityTable" items="{/EntitySet}">
+          <columns>
+            <Column>
+              <Text text="ID"/>
+            </Column>
+            <Column>
+              <Text text="Name"/>
+            </Column>
+          </columns>
+          <items>
+            <ColumnListItem>
+              <cells>
+                <Text text="{id}"/>
+                <Text text="{name}"/>
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+      </content>
+    </Page>
+  </App>
+</mvc:View>
+

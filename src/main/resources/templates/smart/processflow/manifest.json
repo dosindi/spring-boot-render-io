@@ -1,0 +1,41 @@
+{
+  "sap.app": {
+    "id": "myApp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "OpenUI5 Application",
+    "description": "An OpenUI5 application example",
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata.svc/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.60.1",
+      "libs": {
+        "sap.m": {}
+      }
+    },
+    "models": {
+      "": {
+        "dataSource": "mainService"
+      }
+    },
+    "rootView": {
+      "viewName": "myApp.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+</head>
+<body>
+    <div id="content"></div>
+    
+    <script th:inline="javascript">
+        sap.ui.getCore().attachInit(function() {
+            new sap.m.Text({
+                text: /*[[${message}]]*/
+            }).placeAt("content");
+        });
+    </script>
+</body>
+</html>
+

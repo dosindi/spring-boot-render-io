@@ -1,0 +1,15 @@
+sap.ui.define([
+	"com/penninkhof/espui/controller/BaseController"
+], function(Controller) {
+	"use strict";
+
+	return Controller.extend("com.penninkhof.espui.controller.App", {
+		
+		onAfterRendering: function() {
+			$("#splash-screen").remove();
+                        jQuery.sap.log.info("Your Info Message");
+		}
+		
+	});
+
+});
